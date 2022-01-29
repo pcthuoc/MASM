@@ -8,7 +8,6 @@ extrn   HeapFree: proc
 
 .data
     sSize       db      'Nhap  n: ', 0
-
     y 			db		'1',98 dup('0')
     x 			db		    99 dup('0')
     n1          db      '0 '
@@ -85,7 +84,6 @@ main proc
             mov     r8,offset number
             call    sum
 
-
             mov     r8, rcx
             mov     rcx,  STD_OUTPUT_HANDLE
             mov     rdx,  rax
@@ -97,14 +95,9 @@ main proc
             jz      finish
             jmp     lap0
 
-
-
-
     finish:
     mov     ecx, 0
     call    ExitProcess
-
-
 main endp
 sum  proc
     push    rbp
@@ -152,8 +145,7 @@ sum  proc
 sum  endp
 atoi proc; convert string to int , rcx= string 
     push    rbp
-    mov     rbp,rsp
-    
+    mov     rbp,rsp 
     push    rdi
     push    rsi
     push    rdx
@@ -200,7 +192,6 @@ atoi proc; convert string to int , rcx= string
         ret     
 
 atoi endp
-
 end
 	
 

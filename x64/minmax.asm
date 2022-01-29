@@ -215,9 +215,9 @@ itoa proc
     call    HeapAlloc           
     add     rsp, 20h
     mov     rsi, rax            
-    add     rsi, 9              ; rdi = *(str + 9)
-    mov     rax,r12             ; rax=r12
-    mov     r12, rsi            ; save rdi
+    add     rsi, 9             
+    mov     rax,r12            
+    mov     r12, rsi            
     mov     r8d, 10
     
     lapx:
