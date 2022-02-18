@@ -591,19 +591,5 @@ write endp
     ; Section Table
     sSectionHeader          db  0ah, 0dh, "[+] Section Header: ", 0ah, 0dh, 0
     sName                   db  "	Name		Virtual Address		Raw Address		Characteristics", 0Ah, 0Dh
-    ; Export Directory
-    sExportDirectory        db  0ah, 0dh, "[!] Export Directory: ", 0ah, 0dh, 0
-    sNumberOfFunctions      db  "Number Of Functions: ", 0
-    sNumberOfNames          db  "Number Of Names: ", 0
-    sAddressOfFunctions     db  "Address Of Functions: ", 0
-    sAddressOfNames         db  "Address Of Names: ", 0
-    sAddressOfNameOrdinals  db  "Address Of Name Ordinals: ", 0
-    sNameOrdinal            db  "Name Ordinal: ", 0   
-    sFunction               db  "Function RVA: ", 0
-    ; Import Directory
-    sImportDirectory        db  0ah, 0dh, "[!] Import Directory: ", 0ah, 0dh, 0
-    sDllName                db  0ah, 0dh, "[!!] Dll Name: ", 0
-    sHint                   db  "Hint: ", 0
-    sOrdinal                db  "Ordinal: ", 0
 
 end
